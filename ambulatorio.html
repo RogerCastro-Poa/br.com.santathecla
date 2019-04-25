@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<!--
+        Alpha by HTML5 UP
+        html5up.net | @ajlkn
+        Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Clínica Santa Thecla - Ambulatório</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="icon" href="images/favicon.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+        <style type="text/css">
+            #slider{
+                list-style:none;
+                height:500px;
+                margin:0 auto;
+                padding:0;
+                overflow: hidden;
+                position: relative;
+                margin-left: -2em;
+                width: calc(100% + 4em);
+            }
+
+            #slider li{
+                position: absolute;
+                z-index: 0;
+                display:none;
+            }
+
+            #slider li.sliderActive{
+                z-index: 1;
+            }
+
+        </style>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            function simpleSlider() {
+
+                var sliderActive = $("#slider .sliderActive");
+                var sliderNext = sliderActive.next().length ? sliderActive.next() : $("#slider li:first");
+                sliderNext.addClass('sliderActive').fadeIn();
+                sliderActive.removeClass('sliderActive').fadeOut();
+            }
+            $(function () {
+                $("#slider li:first").fadeIn();
+                setInterval("simpleSlider()", 7500);
+            });
+        </script>
+
+    </head>
+    <body class="is-preload">
+        <div id="page-wrapper">
+
+            <!-- Header -->
+            <header id="header">
+
+                <div class="vamosconversar">
+                    <h1>Vamos conversar? Ligue: (51)3075-5200</h1>
+                </div>
+
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index">Home</a></li>
+                        <li>
+                            <a href="#">Tratamentos</a>
+                            <ul>
+                                <li><a href="saude-mental">Saúde Mental</a></li>
+                                <li><a href="alcool-e-drogas">Álcool e Drogas</a></li>
+                                <li><a href="enxoval">Enxoval</a></li>
+                            </ul>
+                        </li>                
+                        <li>
+                            <a href="#">Corpo Clínico</a>
+                            <ul>
+                                <li><a href="psiquiatria">Psiquiatria</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Equipe</a>
+                            <ul>
+                                <li><a href="psicologia">Psicologia</a></li>
+                                <li><a href="enfermagem">Enfermagem</a></li>
+                                <li><a href="nutricao">Nutrição</a></li>
+                                <li><a href="educacao-fisica">Educação Física</a></li>
+                                <li><a href="biodanza">Biodanza</a></li>
+                            </ul>
+                        </li> 
+                        <li><a href="#">Mídia</a></li>
+                        <li><a href="trabalhe-conosco">Trabalhe conosco</a></li>
+                        <li><a href="contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Main -->
+            <section id="main" class="container">
+                <header>
+                    <h2>Ambulatório</h2>
+                    <p>Conheça os serviços ambulatoriais oferecidos pela clínica.</p>
+                </header>
+                <div class="box">
+
+                    <!-- Início do Slider -->
+                    <ul id="slider">
+                        <li class="sliderActive"><img src="images/ambulatorio-01.png" alt=""></li>
+                        <li><img src="images/ambulatorio-02.png" alt=""></li>
+                        <li><img src="images/ambulatorio-03.png" alt=""></li>
+                        <li><img src="images/ambulatorio-04.png" alt=""></li>
+                    </ul>
+                    <!-- Fim do Slider -->
+
+                    <h3>Atendimento ambulatorial</h3>
+                    <p>
+                        A organização do tratamento em saúde mental depende de muitas variáveis como estado clínico, motivação para o tratamento, clareza em relação
+                        ao diagnóstico e necessidade de avaliação de urgência. O Atendimento Ambulatorial ou de Consultório é indicado para pessoas que estejam em 
+                        sofrimento ou em dúvida em relação a como delinear seu planejamento terapêutico. Na consulta médica, o profissional organizará em parceria
+                        com o paciente e/ou com a família a melhor estratégia para resolver os problemas que estejam acontecendo. Agende uma avaliação para 
+                        compreender como podemos lhe ajudar a voltar para seu caminho.
+                    </p>
+                    <h3>Consulta Psiquiátrica</h3>
+                    <p>
+                        A Psiquiatria é reconhecida como uma especialidade médica que lida com o órgão mais importante do corpo. Os psiquiatras lidam com as áreas
+                        do cérebro responsáveis por emoções, pensamentos, sentimentos, comportamentos, impulsos, comunicação e interação social. A avaliação com 
+                        o(a) médico(a) psiquiatra conseguirá lhe auxiliar a compreender se seu sofrimento e sintomas na verdade constituem uma alteração dos 
+                        neurônios e se há benefício de um medicamento para melhorar o funcionamento do cérebro, auxiliando o processo de recuperação. O tratamento
+                        complementar às medicações é a Psicoterapia, onde se utilizam técnicas verbais para compreender a origem do sofrimento e lidar com ele,
+                        buscando um novo significado para experiências do passado.
+                    </p>
+                    <h3>Consulta Psicológica</h3>
+                    <p>
+                        Conversar com um amigo é sempre agradável, pois nos traz alegria nos bons momentos e afago nas horas difíceis. Ao fazer uma avaliação
+                        ou tratamento com um profissional de saúde mental, ele lança mão do vínculo e também de técnicas aprendidas em duas décadas de treinamento
+                        e orientadas por mais de um século de trabalhos e estudos científicos. A avaliação psiquiátrica e a avaliação psicológica identificam 
+                        necessidade de intervenção psicoterápica.
+                    </p>
+                    <div class="row">
+                        <div class="row-6 row-12-mobilep">
+                            <h3>Horário de funcionamento</h3>
+                            <p>O horário de funcionamento do ambulatório: segunda à sexta das 8:00 às 19:30 e aos sábados das 8:00 às 11:30. Os atendimentos são
+                                por convênios ou particulares.
+                            </p>
+                        </div>
+                        <div class="botaovoltar">
+                            <a href="javascript:window.history.go(-1)" class="button">Voltar</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <li><a href="https://www.facebook.com/santathecla/" class="icon fa-facebook" target="blank"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/clinicasantathecla/" class="icon fa-instagram" target="blank"><span class="label">Instagram</span></a></li>
+                    <li><a href="https://twitter.com/SantaThecla" class="icon fa-twitter" target="blank"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCRXF8h1ltQuEsIvW3G1IDYA/" class="icon fab fa-youtube" target="blank"><span class="label">Youtube</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/clinica-santa-thecla/" class="icon fab fa-linkedin" target="blank"><span class="label">Linkedin</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>Avenida Boqueirão, 320 - Bairro Igara - CEP 92410-350 - Canoas/RS - Telefone (51)3075-5200</li>
+                    <li>&copy; Todos os direitos reservados.</li><li>Design & Code: RC&M Tecnologia</li>
+                </ul>
+            </footer>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

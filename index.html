@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<!--
+        Design & Code by i9 Tecnologia
+        Todos os direitos reservados
+-->
+<html>
+    <head>
+        <title>Clínica Santa Thecla - Início</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="icon" href="images/favicon.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+        <style type="text/css">
+            #slider{
+                list-style:none;
+                height:500px;
+                margin:0 auto;
+                padding:0;
+                overflow: hidden;
+                position: relative;
+                margin-left: -2em;
+               /* width: calc(100% + 4em);*/
+            }
+
+            #slider li{
+                position: absolute;
+                z-index: 0;
+                display:none;
+            }
+
+            #slider li.sliderActive{
+                z-index: 1;
+            }
+ 
+            /* daqui para baixo */
+            
+            #slider {
+                position: relative;
+                list-style: none;
+                overflow: hidden;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+
+            #slider li {
+                -webkit-backface-visibility: hidden;
+                position: absolute;
+                display: none;
+                width: 100%;
+                left: 0;
+                top: 0;
+            }
+
+            #slider li:first-child {
+                position: relative;
+                display: block;
+                float: left;
+            }
+
+            #slider img {
+                display: block;
+                height: auto;
+                float: left;
+                width: 100%;
+                border: 0;
+            }
+
+        </style>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            function simpleSlider() {
+
+                var sliderActive = $("#slider .sliderActive");
+                var sliderNext = sliderActive.next().length ? sliderActive.next() : $("#slider li:first");
+                sliderNext.addClass('sliderActive').fadeIn();
+                sliderActive.removeClass('sliderActive').fadeOut();
+            }
+            $(function () {
+                $("#slider li:first").fadeIn();
+                setInterval("simpleSlider()", 7500);
+            });
+        </script>
+
+    </head>
+    <body class="landing is-preload">
+        <div id="page-wrapper">
+
+            <!-- Header -->
+            <header id="header" class="alt">
+
+                <div class="vamosconversar">
+                    <h1>Vamos conversar? Ligue: (51)3075-5200</h1>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index">Home</a></li>
+                        <li>
+                            <a href="#">Tratamentos</a>
+                            <ul>
+                                <li><a href="saude-mental">Saúde Mental</a></li>
+                                <li><a href="alcool-e-drogas">Álcool e Drogas</a></li>
+                                <li><a href="enxoval">Enxoval</a></li>
+                            </ul>
+                        </li>                
+                        <li>
+                            <a href="#">Corpo Clínico</a>
+                            <ul>
+                                <li><a href="psiquiatria">Psiquiatria</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Equipe</a>
+                            <ul>
+                                <li><a href="psicologia">Psicologia</a></li>
+                                <li><a href="enfermagem">Enfermagem</a></li>
+                                <li><a href="nutricao">Nutrição</a></li>
+                                <li><a href="educacao-fisica">Educação Física</a></li>
+                                <li><a href="biodanza">Biodanza</a></li>
+                            </ul>
+                        </li> 
+                        <li><a href="#">Mídia</a></li>
+                        <li><a href="trabalhe-conosco">Trabalhe conosco</a></li>
+                        <li><a href="contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Banner -->
+            <section id="banner">
+                <div class="logomarca">
+                    <img src="images/logo1.png">
+                    <br/><br/>
+                    <br/><br/>
+                </div>
+                <ul class="actions special">
+                    <li><a href="quem-somos" class="button primary">Quem somos</a></li>
+                    <li><a href="https://wa.me/5551996054844?text=Olá!%20Eu%20gostaria%20de%20marcar%20uma%20consulta." class="button">Marque uma consulta</a></li>
+                </ul>
+            </section>
+
+            <!-- Main -->
+            <section id="main" class="container">
+
+                <section class="box special">
+                    <header class="major">
+                        <h2>Alegria de proporcionar bem-estar para <br/>
+                            nossos pacientes e seus familiares.
+                        </h2>
+                        <p>Fundada em 1975, a Clínica Santa Thecla é referência em saúde mental no Rio Grande do Sul. <br/>
+                            Nosso dia a dia é movido pelo desejo de proporcionar aqueles que nos procuram um novo sentido para viver.</p>
+                    </header>
+
+                    <!-- Início do Slider -->
+                    <ul id="slider">
+                        <li class="sliderActive"><img src="images/01.png" alt=""></li>
+                        <li><img src="images/02.png" alt=""></li>
+                        <li><img src="images/03.png" alt=""></li>
+                        <li><img src="images/04.png" alt=""></li>
+                        <li><img src="images/05.png" alt=""></li>
+                    </ul>
+                    <!-- Fim do Slider -->
+                </section>
+
+                <section class="box special features">
+                    <div class="features-row">
+                        <section>
+                            <a href="ambulatorio"><span class="icon major fa fa-check-square accent1"></span></a>
+                            <h3>Ambulatório</h3>
+                            <p>A Clínica Santa Thecla oferece atendimento ambulatorial nas áreas de: Psiquiátria Clínica - adulto e adolescente<br/> Psicoterapia - adulto, adolescente e infantil.<a href="ambulatorio"> - Saiba mais...</a></p>
+                        </section>
+                        <section>
+                            <a href="internacao"><span class="icon major fa fa-check-square accent2"></span></a>
+                            <h3>Internação</h3>
+                            <p>Durante este período de internação nosso paciente conta com uma equipe multidisciplinar integrada e atenta as suas necessidades.<a href="internacao"> - Saiba mais...</a></p>
+                        </section>
+                    </div>
+                    <div class="features-row">
+                        <section>
+                            <a href="estrutura"><span class="icon major fa fa-check-square accent3"></span></a>
+                            <h3>Estrutura</h3>
+                            <p>A Clínica Santa Thecla propõe à comunidade a apresentação de palestras sobre temas relacionados à saúde mental. Faça seu contato pelo telefone (51)3075-5200.<a href="estrutura"> - Saiba mais...</a></p>
+                        </section>
+                        <section>
+                            <a href="convenios"><span class="icon major fa fa-check-square accent4"></span></a>
+                            <h3>Convênios</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat a libero ut tempor. In vel massa et tortor rutrum commodo. Duis tristique, velit ac fringilla dapib.</p>
+                        </section>
+                    </div>
+                </section>
+
+                <div class="row">
+                    <div class="col-6 col-12-narrower">
+
+                        <section class="box special">
+                            <span class="image featured"><img src="images/blog.jpg" alt="" /></span>
+                            <h3>Blog</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat, nisi a aliquet placerat, erat odio feugiat nulla, sed bibendum velit lorem eget quam. Quisque a dolor ex. Vivamus facilisis ultrices ante.</p>
+                            <ul class="actions special">
+                                <li><a href="#" class="button alt">Acesse o blog</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col-6 col-12-narrower">
+
+                        <section class="box special">
+                            <span class="image featured"><img src="images/saudemental.jpg" alt="" /></span>
+                            <h3>Temas em saúde mental</h3>
+                            <p> Divulgamos informações em saúde mental de maneira simples e clara. As doenças psiquiátricas despertam cada vez mais interesse à medida que estes sintomas se tornam mais prevalentes na nossa população.</p>
+                            <ul class="actions special">
+                                <li><a href="temas-em-saude-mental" class="button alt">Acesse aqui!</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section id="cta">
+
+                <h2>Cadastre-se!</h2>
+                <p>Assine a nossa newsletter e receba todas as novidades sobre a clínica.</p>
+
+                <form>
+                    <div class="row gtr-50 gtr-uniform">
+                        <div class="col-8 col-12-mobilep">
+                            <input type="email" name="email" id="email" placeholder="Seu melhor email" />
+                        </div>
+                        <div class="col-4 col-12-mobilep">
+                            <input type="submit" value="Enviar" class="fit" />
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <li><a href="https://www.facebook.com/santathecla/" class="icon fa-facebook" target="blank"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/clinicasantathecla/" class="icon fa-instagram" target="blank"><span class="label">Instagram</span></a></li>
+                    <li><a href="https://twitter.com/SantaThecla" class="icon fa-twitter" target="blank"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCRXF8h1ltQuEsIvW3G1IDYA/" class="icon fab fa-youtube" target="blank"><span class="label">Youtube</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/clinica-santa-thecla/" class="icon fab fa-linkedin" target="blank"><span class="label">Linkedin</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>Avenida Boqueirão, 320 - Bairro Igara - CEP 92410-350 - Canoas/RS - Telefone (51)3075-5200</li>
+                    <li>&copy; Todos os direitos reservados.</li><li>Design & Code: RC&M Tecnologia</li>
+                </ul>
+            </footer>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

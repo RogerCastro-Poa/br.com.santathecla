@@ -1,0 +1,5 @@
+
+# Ocultar a extensão html do arquivo
+RewriteEngine On
+RewriteRule ^([0-9A-Za-z-_]+)$ /$1.html
+
