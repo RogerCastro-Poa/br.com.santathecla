@@ -9,11 +9,11 @@
 
 /* CLASSES ADICIONADAS */
 /* Estilos aplicados a larguras até 1080 pixels */
- 
 /* Estilos aplicados a larguras até 480 pixels */
 
 .botaovoltar {
-   align-items: center
+    align-items: center;
+    padding-top: 10px;
 }
 
 @media screen and (max-width: 720px) {
@@ -2269,7 +2269,7 @@
 		background: #fff;
 		border-radius: 6px;
 		box-shadow: 0 2px 0 0 #e5e5e5;
-		margin: 0 0 2em 0;
+		margin: 0 0 0 0;
 		padding: 3em;
 	}
 
