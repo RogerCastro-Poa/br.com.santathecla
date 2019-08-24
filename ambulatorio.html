@@ -1,8 +1,7 @@
 <!DOCTYPE HTML>
 <!--
-        Alpha by HTML5 UP
-        html5up.net | @ajlkn
-        Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+        Design & Code by Projeto Tecnologia & Consultoria
+        Clinica Santa Thecla - Todos os direitos reservados
 -->
 <html>
     <head>
@@ -12,44 +11,8 @@
         <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="icon" href="images/favicon.png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-
-        <style type="text/css">
-            #slider{
-                list-style:none;
-                height:500px;
-                margin:0 auto;
-                padding:0;
-                overflow: hidden;
-                position: relative;
-                margin-left: -2em;
-                width: calc(100% + 4em);
-            }
-
-            #slider li{
-                position: absolute;
-                z-index: 0;
-                display:none;
-            }
-
-            #slider li.sliderActive{
-                z-index: 1;
-            }
-
-        </style>
-
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script type="text/javascript">
-            function simpleSlider() {
-
-                var sliderActive = $("#slider .sliderActive");
-                var sliderNext = sliderActive.next().length ? sliderActive.next() : $("#slider li:first");
-                sliderNext.addClass('sliderActive').fadeIn();
-                sliderActive.removeClass('sliderActive').fadeOut();
-            }
-            $(function () {
-                $("#slider li:first").fadeIn();
-                setInterval("simpleSlider()", 7500);
-            });
         </script>
 
     </head>
@@ -104,16 +67,7 @@
                     <p>Conheça os serviços ambulatoriais oferecidos pela clínica.</p>
                 </header>
                 <div class="box">
-
-                    <!-- Início do Slider -->
-                    <ul id="slider">
-                        <li class="sliderActive"><img src="images/ambulatorio-01.png" alt=""></li>
-                        <li><img src="images/ambulatorio-02.png" alt=""></li>
-                        <li><img src="images/ambulatorio-03.png" alt=""></li>
-                        <li><img src="images/ambulatorio-04.png" alt=""></li>
-                    </ul>
-                    <!-- Fim do Slider -->
-
+                    <span class="image featured"><img src="images/ambulatorio.png" alt="" /></span>
                     <h3>Atendimento ambulatorial</h3>
                     <p>
                         A organização do tratamento em saúde mental depende de muitas variáveis como estado clínico, motivação para o tratamento, clareza em relação
@@ -146,9 +100,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="voltar">
-                        <a href="javascript:window.history.go(-1)">VOLTAR</a>
-                    </div>
+                </div>
+                <div class="voltar">
+                    <a href="javascript:window.history.go(-1)">VOLTAR</a>
                 </div>
             </section>
 
@@ -163,10 +117,9 @@
                 </ul>
                 <ul class="copyright">
                     <li>Avenida Boqueirão, 320 - Bairro Igara - CEP 92410-350 - Canoas/RS - Telefone (51)3075-5200</li>
-                    <li>&copy; Todos os direitos reservados.</li><li>Design & Code: RC&M Tecnologia</li>
+                    <li>&copy; Todos os direitos reservados.</li><li>Design & Code: Projeto Tecnologia & Consultoria.</li>
                 </ul>
             </footer>
-
         </div>
 
         <!-- Scripts -->

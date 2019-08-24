@@ -1,90 +1,16 @@
 <!DOCTYPE HTML>
 <!--
-        Design & Code by i9 Tecnologia
-        Todos os direitos reservados
+        Design & Code by Projeto Tecnologia & Consultoria
+        Clinica Santa Thecla - Todos os direitos reservados
 -->
 <html>
     <head>
-        <title>Clínica Santa Thecla</title>
+        <title>Clínica Santa Thecla - Início</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="icon" href="images/favicon.png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-
-        <style type="text/css">
-            #slider{
-                list-style:none;
-                height:500px;
-                margin:0 auto;
-                padding:0;
-                overflow: hidden;
-                position: relative;
-                margin-left: -2em;
-                /* width: calc(100% + 4em);*/
-            }
-
-            #slider li{
-                position: absolute;
-                z-index: 0;
-                display:none;
-            }
-
-            #slider li.sliderActive{
-                z-index: 1;
-            }
-
-            /* daqui para baixo */
-
-            #slider {
-                position: relative;
-                list-style: none;
-                overflow: hidden;
-                width: 100%;
-                padding: 0;
-                margin: 0;
-            }
-
-            #slider li {
-                -webkit-backface-visibility: hidden;
-                position: absolute;
-                display: none;
-                width: 100%;
-                left: 0;
-                top: 0;
-            }
-
-            #slider li:first-child {
-                position: relative;
-                display: block;
-                float: left;
-            }
-
-            #slider img {
-                display: block;
-                height: auto;
-                float: left;
-                width: 100%;
-                border: 0;
-            }
-
-        </style>
-
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script type="text/javascript">
-            function simpleSlider() {
-
-                var sliderActive = $("#slider .sliderActive");
-                var sliderNext = sliderActive.next().length ? sliderActive.next() : $("#slider li:first");
-                sliderNext.addClass('sliderActive').fadeIn();
-                sliderActive.removeClass('sliderActive').fadeOut();
-            }
-            $(function () {
-                $("#slider li:first").fadeIn();
-                setInterval("simpleSlider()", 7500);
-            });
-        </script>
-
     </head>
     <body class="landing is-preload">
         <div id="page-wrapper">
@@ -153,41 +79,32 @@
                         <p>Fundada em 1975, a Clínica Santa Thecla é referência em saúde mental no Rio Grande do Sul. <br/>
                             Nosso dia a dia é movido pelo desejo de proporcionar aqueles que nos procuram um novo sentido para viver.</p>
                     </header>
-
-                    <!-- Início do Slider -->
-                    <ul id="slider">
-                        <li class="sliderActive"><img src="images/01.png" alt=""></li>
-                        <li><img src="images/02.png" alt=""></li>
-                        <li><img src="images/03.png" alt=""></li>
-                        <li><img src="images/04.png" alt=""></li>
-                        <li><img src="images/05.png" alt=""></li>
-                    </ul>
-                    <!-- Fim do Slider -->
+                    <span class="image featured"><img src="images/index.png" alt="" /></span>
                 </section>
 
                 <section class="box special features">
                     <div class="features-row">
                         <section>
-                            <a href="ambulatorio"><span class="icon major fa fa-check-square accent1"></span></a>
+                            <a href="ambulatorio"><span class="icon major fa fa-check-square accent2"></span></a>
                             <h3>Ambulatório</h3>
-                            <p>Oferecemos atendimento ambulatorial nas áreas de: Psiquiátria Clínica - adulto e adolescente e Psicoterapia - adulto, adolescente e infantil.<a href="ambulatorio"> - Saiba mais...</a></p>
+                            <p>A Clínica Santa Thecla oferece atendimento ambulatorial nas áreas de: Psiquiátria Clínica - adulto e adolescente<br/> Psicoterapia - adulto, adolescente e infantil.<a href="ambulatorio"> - Saiba mais...</a></p>
                         </section>
                         <section>
-                            <a href="internacao"><span class="icon major fa fa-check-square accent2"></span></a>
+                            <a href="internacao"><span class="icon major fa fa-check-square accent3"></span></a>
                             <h3>Internação</h3>
-                            <p>No período de internação nossos(as) pacientes são atendidos por uma equipe multidisciplinar integrada e atenta às suas necessidades.<a href="internacao"> - Saiba mais...</a></p>
+                            <p>Durante este período de internação nosso paciente conta com uma equipe multidisciplinar integrada e atenta as suas necessidades.<a href="internacao"> - Saiba mais...</a></p>
                         </section>
                     </div>
                     <div class="features-row">
                         <section>
-                            <a href="estrutura"><span class="icon major fa fa-check-square accent3"></span></a>
+                            <a href="estrutura"><span class="icon major fa fa-check-square accent4"></span></a>
                             <h3>Estrutura</h3>
                             <p>A Clínica Santa Thecla dispõe de estrutura física adequada e em constante evolução para o tratamento de todas as patologias relacionados à saúde mental.<a href="estrutura"> - Saiba mais...</a></p>
                         </section>
                         <section>
-                            <a href="convenios"><span class="icon major fa fa-check-square accent4"></span></a>
+                            <a href="convenios"><span class="icon major fa fa-check-square accent5"></span></a>
                             <h3>Convênios</h3>
-                            <p>Disponibilizamos para os(as) nossos(as) pacientes mais de 30 convênios com as maiores operadoras de saúde do país, além de convênios com entidades públicas.<a href="convenios"> - Saiba mais...</a></p>
+                             <p>Disponibilizamos para os(as) nossos(as) pacientes mais de 30 convênios com as maiores operadoras de saúde do país, além de convênios com entidades públicas.<a href="convenios"> - Saiba mais...</a></p>
                         </section>
                     </div>
                 </section>
@@ -198,7 +115,7 @@
                         <section class="box special">
                             <span class="image featured"><img src="images/blog.jpg" alt="" /></span>
                             <h3>Blog</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat, nisi a aliquet placerat, erat odio feugiat nulla, sed bibendum velit lorem eget quam. Quisque a dolor ex. Vivamus facilisis ultrices ante.</p>
+                            <p>Conheça o nosso Blog e atualize-se sobre o que acontece em saúde mental no Brasil e no mundo.</p>
                             <ul class="actions special">
                                 <li><a href="#" class="button alt">Acesse o blog</a></li>
                             </ul>
@@ -209,7 +126,7 @@
                         <section class="box special">
                             <span class="image featured"><img src="images/saudemental.jpg" alt="" /></span>
                             <h3>Temas em saúde mental</h3>
-                            <p> Divulgamos informações em saúde mental de maneira simples e clara. As doenças psiquiátricas despertam cada vez mais interesse à medida que estes sintomas se tornam mais prevalentes na nossa população.</p>
+                            <p> Divulgamos nessa seção a nossa produção técnico-científica de maneira simples e clara.</p>
                             <ul class="actions special">
                                 <li><a href="temas-em-saude-mental" class="button alt">Acesse aqui!</a></li>
                             </ul>
@@ -247,7 +164,7 @@
                 </ul>
                 <ul class="copyright">
                     <li>Avenida Boqueirão, 320 - Bairro Igara - CEP 92410-350 - Canoas/RS - Telefone (51)3075-5200</li>
-                    <li>&copy; Todos os direitos reservados.</li><li>Design & Code: RC&M Tecnologia</li>
+                    <li>&copy; Todos os direitos reservados.</li><li>Design & Code: Projeto Tecnologia & Consultoria</li>
                 </ul>
             </footer>
 
