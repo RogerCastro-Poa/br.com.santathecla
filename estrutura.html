@@ -5,15 +5,25 @@
 -->
 <html>
     <head>
-        <title>Santa Thecla</title>
+        <title>Estrutura Física | Clínica Santa Thecla</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="icon" href="images/favicon.png" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147673468-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-147673468-1');
+        </script>
     </head>
     <body class="is-preload">
         <div id="page-wrapper">
-
             <!-- Header -->
             <header id="header">
 
@@ -29,7 +39,6 @@
                             <ul>
                                 <li><a href="saude-mental">Saúde Mental</a></li>
                                 <li><a href="alcool-e-drogas">Álcool e Drogas</a></li>
-                                <li><a href="enxoval">Enxoval</a></li>
                             </ul>
                         </li>                
                         <li>
@@ -48,13 +57,18 @@
                                 <li><a href="biodanza">Biodanza</a></li>
                             </ul>
                         </li> 
-                        <li><a href="#">Mídia</a></li>
+                        <li>
+                            <a href="#">Informações úteis</a>
+                            <ul>
+                                <li><a href="enxoval">Enxoval</a>
+                                <li><a href="informacoes-importantes">Altas e Ligações</a>
+                            </ul>
+                        </li>
                         <li><a href="trabalhe-conosco">Trabalhe conosco</a></li>
                         <li><a href="contato">Contato</a></li>
                     </ul>
                 </nav>
             </header>
-
             <!-- Main -->
             <section id="main" class="container">
 
@@ -77,7 +91,7 @@
                         </section>
                         <section>
                             <a href="espaco-para-jogos"><span class="icon major fa fa-check-square accent2"></span></a>
-                            <h3>Espaço para jogos</h3>
+                            <h3>Sala de jogos</h3>
                             <p>Local destinado para atividades recreativas dos pacientes.<a href="espaco-para-jogos"> - Saiba mais...</a></p>
                         </section>
                     </div>
@@ -102,7 +116,7 @@
                         <section>
                             <a href="atividades"><span class="icon major fa fa-check-square accent6"></span></a>
                             <h3>Atividades</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="atividades"> - Saiba mais...</a></p>
+                            <p>Atividades e Eventos desenvolvidos pela clínica.<a href="#"> - Saiba mais...</a></p>
                         </section>
                     </div>
                 </section>
@@ -110,14 +124,11 @@
                     <a href="javascript:window.history.go(-1)">VOLTAR</a>
                 </div>
             </section>
-
             <!-- Footer -->
             <footer id="footer">
                 <ul class="icons">
                     <li><a href="https://www.facebook.com/santathecla/" class="icon fa-facebook" target="blank"><span class="label">Facebook</span></a></li>
                     <li><a href="https://www.instagram.com/clinicasantathecla/" class="icon fa-instagram" target="blank"><span class="label">Instagram</span></a></li>
-                    <li><a href="https://twitter.com/SantaThecla" class="icon fa-twitter" target="blank"><span class="label">Twitter</span></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCRXF8h1ltQuEsIvW3G1IDYA/" class="icon fab fa-youtube" target="blank"><span class="label">Youtube</span></a></li>
                     <li><a href="https://www.linkedin.com/in/clinica-santa-thecla/" class="icon fab fa-linkedin" target="blank"><span class="label">Linkedin</span></a></li>
                 </ul>
                 <ul class="copyright">
@@ -126,7 +137,6 @@
                 </ul>
             </footer>
         </div>
-
         <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.dropotron.min.js"></script>

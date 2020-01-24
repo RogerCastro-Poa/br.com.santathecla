@@ -23,11 +23,11 @@ $Mailer->Host = 'smtp.gmail.com';
 $Mailer->Port = 465;
 
 //Dados do e-mail de saida - autenticação
-$Mailer->Username = 'projeto.rogerio@gmail.com';
-$Mailer->Password = 'C3df32ea!';
+$Mailer->Username = 'santathecla@santathecla.com.br';
+$Mailer->Password = 't4ed6p';
 
 //E-mail remetente (deve ser o mesmo de quem fez a autenticação)
-$Mailer->From = 'projeto.rogerio@gmail.com';
+$Mailer->From = 'santathecla@santathecla.com.br';
 
 //Nome do Remetente
 $Mailer->FromName = 'Interessado(a) em contato';
@@ -42,10 +42,7 @@ $Mailer->Body = utf8_decode("Conteúdo do Email");
 $Mailer->AltBody = $Mailer->AltBody = 'Conteúdo do email em texto';
 
 //Destinatario 
-$Mailer->AddAddress('rogerc.pessoal@gmail.com');
-
-//Destinatario 
-$Mailer->AddAddress('rcmtecnologia.rs@gmail.com');
+$Mailer->AddAddress('santathecla@gmail.com');
 
 if ($Mailer->Send()) {
     echo "E-mail enviado com sucesso";

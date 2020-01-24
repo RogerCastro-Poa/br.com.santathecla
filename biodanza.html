@@ -5,31 +5,39 @@
 -->
 <html>
     <head>
-        <title>Santa Thecla</title>
+        <title>Biodanza | Clínica Santa Thecla</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="icon" href="images/favicon.png">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147673468-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-147673468-1');
+        </script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
     </head>
     <body class="is-preload">
         <div id="page-wrapper">
-
             <!-- Header -->
-
             <header id="header">
                 <div class="vamosconversar">
                     <h1>Vamos conversar? Ligue: (51)3075-5200</h1>
                 </div>
                 <nav id="nav">
-                     <ul>
+                    <ul>
                         <li><a href="index">Home</a></li>
                         <li>
                             <a href="#">Tratamentos</a>
                             <ul>
                                 <li><a href="saude-mental">Saúde Mental</a></li>
                                 <li><a href="alcool-e-drogas">Álcool e Drogas</a></li>
-                                <li><a href="enxoval">Enxoval</a></li>
                             </ul>
                         </li>                
                         <li>
@@ -48,13 +56,18 @@
                                 <li><a href="biodanza">Biodanza</a></li>
                             </ul>
                         </li> 
-                        <li><a href="#">Mídia</a></li>
+                        <li>
+                            <a href="#">Informações úteis</a>
+                            <ul>
+                                <li><a href="enxoval">Enxoval</a>
+                                <li><a href="informacoes-importantes">Altas e Ligações</a>
+                            </ul>
+                        </li>
                         <li><a href="trabalhe-conosco">Trabalhe conosco</a></li>
                         <li><a href="contato">Contato</a></li>
                     </ul>
                 </nav>
             </header>
-
             <!-- Main -->
             <section id="main" class="container">
                 <header>
@@ -69,18 +82,15 @@
                         <i class="fas fa-phone-square"></i> - (51) 3075-5200<br>
                         <i class="fas fa-map-marker-alt"></i> - Avenida Boqueirão, 320 - Bairro Igara - Canoas - RS</p>
                 </div>
-                 <div class="voltar">
+                <div class="voltar">
                     <a href="javascript:window.history.go(-1)">VOLTAR</a>
                 </div>
             </section>
-            
             <!-- Footer -->
             <footer id="footer">
                 <ul class="icons">
                     <li><a href="https://www.facebook.com/santathecla/" class="icon fa-facebook" target="blank"><span class="label">Facebook</span></a></li>
                     <li><a href="https://www.instagram.com/clinicasantathecla/" class="icon fa-instagram" target="blank"><span class="label">Instagram</span></a></li>
-                    <li><a href="https://twitter.com/SantaThecla" class="icon fa-twitter" target="blank"><span class="label">Twitter</span></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCRXF8h1ltQuEsIvW3G1IDYA/" class="icon fab fa-youtube" target="blank"><span class="label">Youtube</span></a></li>
                     <li><a href="https://www.linkedin.com/in/clinica-santa-thecla/" class="icon fab fa-linkedin" target="blank"><span class="label">Linkedin</span></a></li>
                 </ul>
                 <ul class="copyright">
@@ -89,7 +99,6 @@
                 </ul>
             </footer>
         </div>
-
         <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.dropotron.min.js"></script>
@@ -98,6 +107,5 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
-
     </body>
 </html>
